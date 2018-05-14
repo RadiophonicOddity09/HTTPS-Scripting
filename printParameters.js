@@ -6,7 +6,7 @@ function getAndPrintHTML (options) {
     response.setEncoding('utf-8');
     response.on('data', function(data) {
       console.log("Chunks recieved: " + '/n' + data);
-      var newData = [];
+      var newData = '';
       newData += data;
       console.log(newData);
     });
